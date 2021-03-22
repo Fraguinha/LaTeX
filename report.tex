@@ -1,0 +1,49 @@
+\documentclass[titlepage, 12pt, a4paper, twoside]{article}
+\usepackage[margin=3cm, headsep=24pt, headheight=2cm]{geometry}
+\usepackage[parfill]{parskip}
+
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{bookmark}
+
+\usepackage{ifthen}
+
+\input{packages/gloassaries}
+\input{packages/lstlistings}
+\input{packages/tocloft}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+% Start sections in any page
+\input{packages/any}
+
+% Start sections in odd pages
+% \input{packages/odd}
+
+\begin{document}
+
+% Cover page
+\pagestyle{empty}
+\input{cover/cover}
+
+% Table of Contents
+\pagestyle{plain}
+\input{meta/toc}
+
+\pagestyle{fancy}
+
+\input{content/introduction}
+
+\input{content/example}
+
+\input{content/conclusion}
+
+\bibliography{bibliography/bibliography}
+\bibliographystyle{plain}
+
+\appendix
+
+\end{document}

@@ -1,0 +1,6 @@
+\usepackage{changepage}
+
+\let\originalsection\section
+\renewcommand{\section}{\checkoddpage\ifthenelse{\boolean{oddpage}}{\clearpage{\thispagestyle{empty}\cleardoublepage}\originalsection}{\cleardoublepage\originalsection}}
+
+\input{packages/fancyhdralt}

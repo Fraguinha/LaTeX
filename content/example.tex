@@ -1,0 +1,104 @@
+\section{Example Content}
+\label{sec:examplecontent}
+
+Following are some examples of how to write this document.
+
+\subsection{Code Snippets}
+\label{subsec:codesnippets}
+
+This is how you create a code snippet:
+
+\begin{lstlisting}[language=Python, caption=Code example]
+  def fib(n):
+    f1, f2 = 0, 1
+    if n == 0:
+        return f1
+    if n == 1:
+        return f2
+    for _ in range(1, n):
+        f1, f2 = f2, f1 + f2
+    return f2
+\end{lstlisting}
+
+\subsection{Math Equations}
+\label{subsec:mathequations}
+
+\begin{equation}
+  \label{eq:equationexample}
+  c_1^2 + c_2^2 = h^2
+\end{equation}
+\myequations{Equation example}
+
+\subsection{Tables}
+\label{subsec:tables}
+
+This is how you create a table:
+
+\begin{table}[h]
+  \begin{center}
+    \begin{tabular}{ |c|c|c| }
+      \hline
+      cell1 & cell2 & cell3 \\
+      \hline
+      cell4 & cell5 & cell6 \\
+      cell7 & cell8 & cell9 \\
+      \hline
+    \end{tabular}
+    \caption{Table example}
+    \label{tbl:tableexample}
+  \end{center}
+\end{table}
+
+\subsection{Figures}
+\label{subsec:figures}
+
+This is how you use figures:
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.2\textwidth]{cover.png}
+  \caption{Figure example}
+  \label{fig:figureexample}
+\end{figure}
+
+\subsection{Acronyms}
+\label{subsec:acronyms}
+
+This is how you use acronyms: \gls{p2p}. \gls{p2p}.
+
+\subsection{Itemizations}
+\label{subsec:itemizations}
+
+This is how you make a bullet list:
+
+\begin{itemize}
+  \item item
+  \item item
+  \item item
+\end{itemize}
+
+\subsection{Enumerations}
+\label{subsec:enumerations}
+
+This is how you make a ordered list:
+
+\begin{enumerate}
+  \item item
+  \item item
+  \item item
+\end{enumerate}
+
+\subsection{Citations}
+\label{subsec:citations}
+
+This is how you make a citation: See teacher notes~\cite{slides}.
+
+\subsection{References}
+\label{subsec:references}
+
+This is how you make a citation: Citations on Subsection~\ref{subsec:citations}.
+
+\subsection{Footnotes}
+\label{subsec:footnotes}
+
+This is how you make a footnote: See footnote~\footnote{This is the footnote}.
