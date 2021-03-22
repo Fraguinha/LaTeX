@@ -1,0 +1,92 @@
+\documentclass{article}
+\usepackage[a4paper,margin=1in]{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\input{packages/lstlistings}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage[parfill]{parskip}
+\usepackage{bookmark}
+\usepackage{float}
+\usepackage{fancyhdr}
+
+% Page numbering
+\setcounter{page}{0}
+
+% Information
+\lhead{Institution Name}
+\rhead{Course}
+\title{Title}
+\author{João Luís Freire Fraga\\\small{joao@fraguinha.com}}
+\date{\today}
+
+\begin{document}
+
+% Title
+\maketitle
+\thispagestyle{empty}
+\pagebreak
+\pagestyle{fancy}
+
+% Content
+\section{Example}\label{sec:examplecontent}
+
+Following are some examples of how to write this document.
+
+\subsection{Code Snippets}\label{subsec:codesnippets}
+
+This is how you create a code snippet:
+
+\begin{lstlisting}[language=Python, caption=fibonacci]
+name = "Fibonacci"
+
+def fib(n):
+	f1, f2 = 0, 1
+	if n == 0:
+			return f1
+	if n == 1:
+			return f2
+	for _ in range(1, n):
+			f1, f2 = f2, f1 + f2
+	return f2
+\end{lstlisting}
+
+\subsection{Tables}\label{subsec:tables}
+
+This is how you create a table:
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{ | c || c | c | }
+      \hline
+               & cell 1,2 & cell 1,3 \\
+      \hline
+      \hline
+      cell 2,1 & cell 2,2 & cell 2,3 \\
+      cell 3,1 & cell 3,2 & cell 3,3 \\
+      \hline
+    \end{tabular}
+    \caption{Table example}\label{tbl:tableexample}
+  \end{center}
+\end{table}
+
+\subsection{Citations}\label{subsec:citations}
+
+This is how you make a citation: See these resources\cite{wiki:latex, slides}.
+
+\subsection{References}\label{subsec:references}
+
+This is how you make a citation: Citations on Subsection~\ref{subsec:citations}.
+
+\subsection{Footnotes}\label{subsec:footnotes}
+
+This is how you make a footnote: See footnote\footnote{This is the footnote}.
+
+% Bibliography
+\bibliography{bibliography}
+\bibliographystyle{plain}
+
+\end{document}
