@@ -2,6 +2,9 @@
 *.glo
 *.idx
 *.log
+*.lol
+*.equ
+*.fls
 *.toc
 *.ist
 *.acn
@@ -16,8 +19,11 @@
 *.ind
 *.lof
 *.lot
+*.ps
 *.maf
 *.mtc
 *.mtc1
 *.out
 *.synctex.gz
+*.synctex.gz(busy)
+*.fdb_latexmk
